@@ -11,12 +11,17 @@ pipeline {
         stage('Install Dependencies') {
             steps {
                 // 'sh' executes a shell command on the agent
-                sh 'npm install'
+                dir('jenkins-aws-demo') {
+                    sh 'npm install'
+                }
             }
         }
         stage('Run Tests') {
             steps {
-                sh 'npm test'
+                dir('jenkins-aws-demo'){
+
+                    sh 'npm test'
+                }
             }
         }
     }
