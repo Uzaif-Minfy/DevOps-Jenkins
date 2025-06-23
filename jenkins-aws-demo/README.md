@@ -26,3 +26,10 @@
 ![alt text](image-3.png)
 
 
+
+
+### Test: Run The App
+SSH to jenkins-agent
+![alt text](image-8.png)
+![alt text](image-9.png)
+
